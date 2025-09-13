@@ -1,60 +1,56 @@
 "use client";
 
-import { useToast } from "./ToastProvider";
+// import { useToast } from "./ToastProvider";
 
 export default function FeaturesSection() {
-  const { showComingSoon } = useToast();
+  // const { showComingSoon } = useToast();
 
   const features = [
     {
+      icon: "💄",
+      title: "Produk Kosmetik Premium",
+      description:
+        "Koleksi lengkap produk kosmetik berkualitas tinggi dari brand ternama dan lokal terpercaya untuk memenuhi kebutuhan kecantikan Anda.",
+      highlights: [
+        "Skincare Original",
+        "Makeup Berkualitas",
+        "Produk Halal & Aman",
+      ],
+    },
+    {
       icon: "🏪",
-      title: "Aplikasi POS Lengkap",
+      title: "Toko Terpercaya",
       description:
-        "Sistem POS yang mudah digunakan dengan fitur inventory management, sales tracking, dan payment processing yang terintegrasi.",
-      highlights: [
-        "Multi Payment Gateway",
-        "Inventory Real-time",
-        "Receipt Digital",
-      ],
+        "NAB (Need A Beauty) telah melayani pelanggan di berbagai daerah dengan komitmen memberikan produk original dan layanan terbaik selama bertahun-tahun.",
+      highlights: ["Produk Original", "Layanan Ramah", "Konsultasi Ahli"],
     },
     {
-      icon: "📊",
-      title: "Dashboard Analytics",
+      icon: "🛒",
+      title: "Marketplace Online (Coming Soon)",
       description:
-        "Pantau performa bisnis Anda dengan dashboard yang memberikan insights mendalam tentang sales, inventory, dan customer behavior.",
-      highlights: ["Sales Analytics", "Customer Insights", "Profit Tracking"],
+        "Segera hadir platform belanja online yang memudahkan Anda berbelanja kosmetik favorit dari kenyamanan rumah dengan berbagai kemudahan.",
+      highlights: ["Belanja Online", "Delivery Service", "Payment Gateway"],
     },
     {
-      icon: "☁️",
-      title: "Cloud-Based System",
+      icon: "🌟",
+      title: "Konsultasi Kecantikan",
       description:
-        "Akses data bisnis Anda dari mana saja dengan sistem berbasis cloud yang aman dan selalu ter-update secara real-time.",
-      highlights: ["Multi Device Access", "Auto Backup", "99.9% Uptime"],
+        "Tim beauty advisor berpengalaman siap membantu Anda memilih produk yang tepat sesuai dengan jenis kulit dan kebutuhan kecantikan Anda.",
+      highlights: ["Beauty Consultant", "Skin Analysis", "Personalized Advice"],
     },
     {
-      icon: "🔄",
-      title: "Multi-Store Management",
+      icon: "�",
+      title: "Brand Terpilih",
       description:
-        "Kelola multiple toko dari satu dashboard terpusat. Monitor performa setiap cabang dan sinkronisasi inventory dengan mudah.",
-      highlights: [
-        "Centralized Control",
-        "Branch Analytics",
-        "Unified Reporting",
-      ],
+        "Kami menghadirkan berbagai brand kosmetik ternama dan produk lokal berkualitas yang telah teruji dan mendapat sertifikasi resmi.",
+      highlights: ["Brand Ternama", "Produk Lokal", "Sertifikasi BPOM"],
     },
     {
-      icon: "👥",
-      title: "Customer Management",
+      icon: "🎁",
+      title: "Promo & Reward",
       description:
-        "Bangun relationship yang kuat dengan customer melalui sistem CRM terintegrasi, loyalty program, dan personalized marketing.",
-      highlights: ["Customer Database", "Loyalty Program", "Marketing Tools"],
-    },
-    {
-      icon: "📱",
-      title: "Mobile-First Design",
-      description:
-        "Akses semua fitur melalui mobile app yang responsif. Kelola bisnis Anda bahkan saat sedang tidak di toko.",
-      highlights: ["iOS & Android App", "Offline Mode", "Push Notifications"],
+        "Nikmati berbagai promo menarik, program loyalty, dan hadiah eksklusif untuk pelanggan setia NAB (Need A Beauty) di setiap pembelian.",
+      highlights: ["Promo Bulanan", "Loyalty Program", "Gift Exclusive"],
     },
   ];
 
@@ -64,11 +60,11 @@ export default function FeaturesSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Fitur Lengkap untuk Bisnis Modern
+            Mengapa Memilih NAB (Need A Beauty)?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Semua yang Anda butuhkan untuk menjalankan dan mengembangkan bisnis
-            retail dalam satu platform terintegrasi
+            Kepercayaan dan kualitas adalah prioritas utama kami dalam melayani
+            kebutuhan kecantikan Anda
           </p>
         </div>
 
@@ -118,7 +114,7 @@ export default function FeaturesSection() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-8 md:p-12">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               Siap Meningkatkan Bisnis Anda?
@@ -142,7 +138,7 @@ export default function FeaturesSection() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

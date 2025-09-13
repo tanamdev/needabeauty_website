@@ -10,14 +10,14 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">N</span>
+                <span className="text-white font-bold text-sm">💄</span>
               </div>
-              <span className="text-xl font-bold">NAB</span>
+              <span className="text-xl font-bold">NAB (Need A Beauty)</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Solusi retail terdepan yang membantu bisnis Anda tumbuh dengan
-              aplikasi POS dan dashboard analytics yang powerful dan mudah
-              digunakan.
+              NAB (Need A Beauty) adalah toko kosmetik terpercaya yang telah
+              melayani kebutuhan kecantikan di berbagai daerah. Produk original
+              berkualitas tinggi dengan layanan konsultasi ahli.
             </p>
             <div className="flex space-x-4">
               <a
@@ -73,14 +73,14 @@ export default function Footer() {
 
           {/* Product Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Produk</h3>
+            <h3 className="text-lg font-semibold mb-4">Kategori Produk</h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Aplikasi POS
+                  Skincare
                 </a>
               </li>
               <li>
@@ -88,7 +88,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Dashboard Analytics
+                  Makeup
                 </a>
               </li>
               <li>
@@ -96,7 +96,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Inventory Management
+                  Hair Care
                 </a>
               </li>
               <li>
@@ -104,7 +104,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Customer Management
+                  Body Care
                 </a>
               </li>
               <li>
@@ -112,7 +112,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Multi-Store System
+                  Fragrance
                 </a>
               </li>
             </ul>
@@ -120,14 +120,14 @@ export default function Footer() {
 
           {/* Support Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Support</h3>
+            <h3 className="text-lg font-semibold mb-4">Layanan</h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Help Center
+                  Konsultasi Kecantikan
                 </a>
               </li>
               <li>
@@ -135,7 +135,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Documentation
+                  Skin Analysis
                 </a>
               </li>
               <li>
@@ -143,7 +143,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  API Reference
+                  Makeup Tutorial
                 </a>
               </li>
               <li>
@@ -151,7 +151,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Contact Support
+                  Customer Support
                 </a>
               </li>
               <li>
@@ -159,7 +159,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Community Forum
+                  Lokasi Toko
                 </a>
               </li>
             </ul>

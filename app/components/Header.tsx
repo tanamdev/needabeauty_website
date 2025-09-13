@@ -40,9 +40,11 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">N</span>
+                <span className="text-white font-bold text-sm">NAB</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">NAB</span>
+              <span className="text-xl font-bold text-gray-900">
+                NAB (Need A Beauty)
+              </span>
             </Link>
           </div>
 
@@ -53,7 +55,7 @@ export default function Header() {
               className="text-gray-600 hover:text-gray-900 transition-colors"
               onClick={(e) => handleNavClick(e, "#features")}
             >
-              Fitur
+              Keunggulan
             </Link>
             <Link
               href="#products"
@@ -67,7 +69,7 @@ export default function Header() {
               className="text-gray-600 hover:text-gray-900 transition-colors"
               onClick={(e) => handleNavClick(e, "#about")}
             >
-              Tentang
+              Tentang Kami
             </Link>
             <Link
               href="/privacy-policy"
@@ -83,7 +85,7 @@ export default function Header() {
               onClick={showComingSoon}
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transition-all duration-200 transform hover:scale-105"
             >
-              Mulai Gratis
+              Konsultasi Gratis
             </button>
           </div>
 
@@ -128,7 +130,7 @@ export default function Header() {
                 className="block px-3 py-2 text-gray-600 hover:text-gray-900 transition-colors"
                 onClick={(e) => handleNavClick(e, "#features")}
               >
-                Fitur
+                Keunggulan
               </Link>
               <Link
                 href="#products"
@@ -142,7 +144,7 @@ export default function Header() {
                 className="block px-3 py-2 text-gray-600 hover:text-gray-900 transition-colors"
                 onClick={(e) => handleNavClick(e, "#about")}
               >
-                Tentang
+                Tentang Kami
               </Link>
               <Link
                 href="/privacy-policy"
@@ -156,7 +158,7 @@ export default function Header() {
                   onClick={showComingSoon}
                   className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transition-all duration-200"
                 >
-                  Mulai Gratis
+                  Konsultasi Gratis
                 </button>
               </div>
             </div>

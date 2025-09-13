@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
       contact: {
         title: "Contact",
         p1: "If you have any questions about this Privacy Policy or how your data is handled, please contact us at:",
-        email: "[your email address]",
+        email: "tanamteam@gmail.com",
       },
     },
 
@@ -141,7 +141,7 @@ export default function PrivacyPolicy() {
       contact: {
         title: "Kontak",
         p1: "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini atau cara data Anda ditangani, silakan hubungi kami di:",
-        email: "[alamat email Anda]",
+        email: "tanamteam@gmail.com",
       },
     },
   };
