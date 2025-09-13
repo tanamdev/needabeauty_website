@@ -1,103 +1,142 @@
-import Image from "next/image";
+"use client";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HeroSection from "./components/HeroSection";
+import FeaturesSection from "./components/FeaturesSection";
+import ProductShowcase from "./components/ProductShowcase";
+import { useToast } from "./components/ToastProvider";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const { showComingSoon } = useToast();
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <div className="font-sans">
+      <Header />
+      <HeroSection />
+      <FeaturesSection />
+      <ProductShowcase />
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                Tentang NAB
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                NAB adalah platform retail technology yang membantu ribuan
+                bisnis di Indonesia untuk bertransformasi digital. Dengan
+                pengalaman lebih dari 5 tahun di industri retail, kami memahami
+                tantangan yang dihadapi oleh pemilik bisnis dalam mengelola
+                operasional sehari-hari.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Solusi kami telah terbukti meningkatkan efisiensi operasional
+                hingga 40% dan memberikan insights yang actionable untuk
+                pengambilan keputusan bisnis yang lebih baik.
+              </p>
+              <div className="grid grid-cols-3 gap-6 pt-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-600">5+</div>
+                  <div className="text-sm text-gray-600">Tahun Pengalaman</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-600">
+                    2000+
+                  </div>
+                  <div className="text-sm text-gray-600">Bisnis Terlayani</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-600">
+                    99.9%
+                  </div>
+                  <div className="text-sm text-gray-600">Uptime Guarantee</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8">
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">🎯</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Misi Kami</h4>
+                      <p className="text-sm text-gray-600">
+                        Membantu setiap bisnis retail mencapai potensi
+                        maksimalnya
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-orange-500 rounded-xl flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">🚀</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900">Visi Kami</h4>
+                      <p className="text-sm text-gray-600">
+                        Menjadi platform retail technology terdepan di Asia
+                        Tenggara
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">💡</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900">
+                        Nilai Kami
+                      </h4>
+                      <p className="text-sm text-gray-600">
+                        Inovasi, reliabilitas, dan customer-centric solution
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-orange-500 to-orange-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Siap Memulai Transformasi Digital Bisnis Anda?
+          </h2>
+          <p className="text-xl text-orange-100 mb-8 leading-relaxed">
+            Bergabunglah dengan ribuan bisnis yang telah merasakan manfaat
+            solusi NAB. Dapatkan trial gratis 14 hari tanpa komitmen.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={showComingSoon}
+              className="bg-white text-orange-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-all duration-200 transform hover:scale-105"
+            >
+              Mulai Trial Gratis
+            </button>
+            <button
+              onClick={showComingSoon}
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-all duration-200"
+            >
+              Jadwalkan Demo
+            </button>
+          </div>
+          <p className="text-sm text-orange-100 mt-4">
+            * Tidak memerlukan kartu kredit • Setup dalam 5 menit • Support 24/7
+          </p>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }
