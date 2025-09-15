@@ -9,7 +9,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment: production
+    # environment: production
 
     steps:
       - name: Checkout source
@@ -40,21 +40,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GHCR_PAT }}
 
-      # - name: Build Docker image with manual version and latest tag
-      #   run: |
-      #     docker build -t ghcr.io/tanamdev/${{ env.NAME }}:${{ env.VERSION }} .
-      #     docker tag ghcr.io/tanamdev/${{ env.NAME }}:${{ env.VERSION }} ghcr.io/tanamdev/${{ env.NAME }}:latest
-      # - name: Debug Secret Values (Partial Echo)
-      #   run: |
-      #     echo "NEXT_PUBLIC_AUTH_API=${{ secrets.NEXT_PUBLIC_AUTH_API }}"
-      #     echo "NEXT_PUBLIC_PRODUCT_API=${{ secrets.NEXT_PUBLIC_PRODUCT_API }}"
-      #     echo "NEXT_PUBLIC_INVENTORY_API=${{ secrets.NEXT_PUBLIC_INVENTORY_API }}"
-      #     echo "NEXT_PUBLIC_TRANSACTION_API=${{ secrets.NEXT_PUBLIC_TRANSACTION_API }}"
-
       - name: Build Docker image with secrets as build args
         run: |
           docker build \
-            --build-arg NEXT_PUBLIC_BRAND_NAME=${{ secrets.NEXT_PUBLIC_BRAND_NAME }} \
+            # --build-arg NEXT_PUBLIC_BRAND_NAME=${{ secrets.NEXT_PUBLIC_BRAND_NAME }} \
             -t ghcr.io/tanamdev/${{ env.NAME }}:${{ env.VERSION }} \
             -t ghcr.io/tanamdev/${{ env.NAME }}:latest .
 
@@ -62,6 +51,3 @@ jobs:
         run: |
           docker push ghcr.io/tanamdev/${{ env.NAME }}:${{ env.VERSION }}
           docker push ghcr.io/tanamdev/${{ env.NAME }}:latest
-
-    # - name: Trigger Dokploy Webhook
-    #   run: curl -X POST "${{ secrets.DOKPLOY_WEBHOOK_URL }}"
