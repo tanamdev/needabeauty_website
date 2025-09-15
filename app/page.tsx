@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection";
 import FeaturesSection from "./components/FeaturesSection";
 import ProductShowcase from "./components/ProductShowcase";
 import { useToast } from "./components/ToastProvider";
+import { FaBullseye, FaRocket, FaLightbulb } from "react-icons/fa";
 
 export default function Home() {
   const { showComingSoon } = useToast();
@@ -60,7 +61,10 @@ export default function Home() {
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">🎯</span>
+                      <FaBullseye
+                        className="text-white text-lg"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Misi Kami</h4>
@@ -73,7 +77,10 @@ export default function Home() {
 
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-orange-500 rounded-xl flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">🚀</span>
+                      <FaRocket
+                        className="text-white text-lg"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Visi Kami</h4>
@@ -86,7 +93,10 @@ export default function Home() {
 
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">💡</span>
+                      <FaLightbulb
+                        className="text-white text-lg"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">

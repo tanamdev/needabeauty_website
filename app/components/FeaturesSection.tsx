@@ -1,13 +1,15 @@
 "use client";
 
 // import { useToast } from "./ToastProvider";
+import { HiShoppingBag, HiSparkles, HiChatAlt2 } from "react-icons/hi";
+import { FaAward, FaGift, FaStore } from "react-icons/fa";
 
 export default function FeaturesSection() {
   // const { showComingSoon } = useToast();
 
   const features = [
     {
-      icon: "💄",
+      icon: <HiSparkles className="text-orange-500" />,
       title: "Produk Kosmetik Premium",
       description:
         "Koleksi lengkap produk kosmetik berkualitas tinggi dari brand ternama dan lokal terpercaya untuk memenuhi kebutuhan kecantikan Anda.",
@@ -18,35 +20,35 @@ export default function FeaturesSection() {
       ],
     },
     {
-      icon: "🏪",
+      icon: <FaStore className="text-orange-500" />,
       title: "Toko Terpercaya",
       description:
         "NAB (Need A Beauty) telah melayani pelanggan di berbagai daerah dengan komitmen memberikan produk original dan layanan terbaik selama bertahun-tahun.",
       highlights: ["Produk Original", "Layanan Ramah", "Konsultasi Ahli"],
     },
     {
-      icon: "🛒",
+      icon: <HiShoppingBag className="text-orange-500" />,
       title: "Marketplace Online (Coming Soon)",
       description:
         "Segera hadir platform belanja online yang memudahkan Anda berbelanja kosmetik favorit dari kenyamanan rumah dengan berbagai kemudahan.",
       highlights: ["Belanja Online", "Delivery Service", "Payment Gateway"],
     },
     {
-      icon: "🌟",
+      icon: <HiChatAlt2 className="text-orange-500" />,
       title: "Konsultasi Kecantikan",
       description:
         "Tim beauty advisor berpengalaman siap membantu Anda memilih produk yang tepat sesuai dengan jenis kulit dan kebutuhan kecantikan Anda.",
       highlights: ["Beauty Consultant", "Skin Analysis", "Personalized Advice"],
     },
     {
-      icon: "�",
+      icon: <FaAward className="text-orange-500" />,
       title: "Brand Terpilih",
       description:
         "Kami menghadirkan berbagai brand kosmetik ternama dan produk lokal berkualitas yang telah teruji dan mendapat sertifikasi resmi.",
       highlights: ["Brand Ternama", "Produk Lokal", "Sertifikasi BPOM"],
     },
     {
-      icon: "🎁",
+      icon: <FaGift className="text-orange-500" />,
       title: "Promo & Reward",
       description:
         "Nikmati berbagai promo menarik, program loyalty, dan hadiah eksklusif untuk pelanggan setia NAB (Need A Beauty) di setiap pembelian.",

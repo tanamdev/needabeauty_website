@@ -1,6 +1,18 @@
 "use client";
 
 import { useToast } from "./ToastProvider";
+import {
+  FaMagic,
+  FaSpa,
+  FaLeaf,
+  FaGift,
+  FaMale,
+  FaShoppingCart,
+  FaTruck,
+  FaCreditCard,
+  FaStar,
+  FaWineBottle,
+} from "react-icons/fa";
 
 export default function ProductShowcase() {
   const { showComingSoon } = useToast();
@@ -28,7 +40,10 @@ export default function ProductShowcase() {
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-pink-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🧴</span>
+                <FaWineBottle
+                  className="text-3xl text-white"
+                  aria-hidden="true"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Skincare</h3>
               <p className="text-gray-600 mb-4">
@@ -48,7 +63,7 @@ export default function ProductShowcase() {
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-red-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">💄</span>
+                <FaMagic className="text-3xl text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Makeup</h3>
               <p className="text-gray-600 mb-4">
@@ -68,7 +83,7 @@ export default function ProductShowcase() {
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">💆‍♀️</span>
+                <FaSpa className="text-3xl text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Hair Care
@@ -90,7 +105,7 @@ export default function ProductShowcase() {
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🧴</span>
+                <FaLeaf className="text-3xl text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Body Care
@@ -112,7 +127,7 @@ export default function ProductShowcase() {
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🌸</span>
+                <FaGift className="text-3xl text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Fragrance
@@ -134,7 +149,7 @@ export default function ProductShowcase() {
           <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">🧔‍♂️</span>
+                <FaMale className="text-3xl text-white" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Men&apos;s Care
@@ -156,7 +171,11 @@ export default function ProductShowcase() {
         {/* Marketplace Coming Soon Section */}
         <div className="text-center bg-gradient-to-r from-orange-500 to-orange-600 rounded-3xl p-12 text-white">
           <h3 className="text-3xl font-bold mb-4">
-            🛒 Marketplace Online Coming Soon!
+            <FaShoppingCart
+              className="inline-block mr-3 align-middle"
+              aria-hidden="true"
+            />{" "}
+            Marketplace Online Coming Soon!
           </h3>
           <p className="text-xl mb-6 max-w-2xl mx-auto">
             Segera nikmati kemudahan berbelanja online semua produk kecantikan
@@ -165,28 +184,36 @@ export default function ProductShowcase() {
 
           <div className="grid md:grid-cols-4 gap-6 mb-8">
             <div className="text-center">
-              <div className="text-3xl mb-2">🚚</div>
+              <div className="text-3xl mb-2">
+                <FaTruck className="inline-block" aria-hidden="true" />
+              </div>
               <h4 className="font-semibold mb-1">Free Delivery</h4>
               <p className="text-sm opacity-90">
                 Gratis ongkir untuk pembelian minimal
               </p>
             </div>
             <div className="text-center">
-              <div className="text-3xl mb-2">💳</div>
+              <div className="text-3xl mb-2">
+                <FaCreditCard className="inline-block" aria-hidden="true" />
+              </div>
               <h4 className="font-semibold mb-1">Multiple Payment</h4>
               <p className="text-sm opacity-90">
                 Berbagai pilihan metode pembayaran
               </p>
             </div>
             <div className="text-center">
-              <div className="text-3xl mb-2">⭐</div>
+              <div className="text-3xl mb-2">
+                <FaStar className="inline-block" aria-hidden="true" />
+              </div>
               <h4 className="font-semibold mb-1">Review & Rating</h4>
               <p className="text-sm opacity-90">
                 Sistem review dari pengguna asli
               </p>
             </div>
             <div className="text-center">
-              <div className="text-3xl mb-2">🎁</div>
+              <div className="text-3xl mb-2">
+                <FaGift className="inline-block" aria-hidden="true" />
+              </div>
               <h4 className="font-semibold mb-1">Exclusive Deals</h4>
               <p className="text-sm opacity-90">Promo khusus member online</p>
             </div>

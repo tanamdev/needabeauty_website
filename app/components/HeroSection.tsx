@@ -1,6 +1,14 @@
 "use client";
 
 import { useToast } from "./ToastProvider";
+import {
+  FaBullseye,
+  FaSearch,
+  FaMagic,
+  FaSpa,
+  FaGift,
+  FaPrescriptionBottle,
+} from "react-icons/fa";
 
 export default function HeroSection() {
   const { showComingSoon } = useToast();
@@ -13,7 +21,11 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
-                �✨ Toko Kosmetik Terpercaya
+                <FaBullseye
+                  className="mr-2 text-orange-800"
+                  aria-hidden="true"
+                />{" "}
+                Toko Kosmetik Terpercaya
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Temukan Kecantikan Alami Anda dengan{" "}
@@ -101,7 +113,7 @@ export default function HeroSection() {
               <div className="p-6 space-y-4">
                 {/* Search Bar */}
                 <div className="bg-gray-50 p-3 rounded-lg flex items-center">
-                  <span className="text-gray-400 mr-3">🔍</span>
+                  <FaSearch className="text-gray-400 mr-3" aria-hidden="true" />
                   <span className="text-gray-500">
                     Search beauty products...
                   </span>
@@ -110,28 +122,48 @@ export default function HeroSection() {
                 {/* Product Categories */}
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-pink-50 p-3 rounded-lg text-center">
-                    <div className="text-2xl mb-1">💄</div>
+                    <div className="text-2xl mb-1">
+                      <FaMagic
+                        className="inline-block text-pink-600"
+                        aria-hidden="true"
+                      />
+                    </div>
                     <div className="text-sm font-medium text-pink-700">
                       Makeup
                     </div>
                     <div className="text-xs text-pink-600">150+ products</div>
                   </div>
                   <div className="bg-purple-50 p-3 rounded-lg text-center">
-                    <div className="text-2xl mb-1">🧴</div>
+                    <div className="text-2xl mb-1">
+                      <FaPrescriptionBottle
+                        className="inline-block text-purple-600"
+                        aria-hidden="true"
+                      />
+                    </div>
                     <div className="text-sm font-medium text-purple-700">
                       Skincare
                     </div>
                     <div className="text-xs text-purple-600">200+ products</div>
                   </div>
                   <div className="bg-orange-50 p-3 rounded-lg text-center">
-                    <div className="text-2xl mb-1">�‍♀️</div>
+                    <div className="text-2xl mb-1">
+                      <FaSpa
+                        className="inline-block text-orange-600"
+                        aria-hidden="true"
+                      />
+                    </div>
                     <div className="text-sm font-medium text-orange-700">
                       Hair Care
                     </div>
                     <div className="text-xs text-orange-600">120+ products</div>
                   </div>
                   <div className="bg-green-50 p-3 rounded-lg text-center">
-                    <div className="text-2xl mb-1">🌸</div>
+                    <div className="text-2xl mb-1">
+                      <FaGift
+                        className="inline-block text-green-600"
+                        aria-hidden="true"
+                      />
+                    </div>
                     <div className="text-sm font-medium text-green-700">
                       Fragrance
                     </div>
