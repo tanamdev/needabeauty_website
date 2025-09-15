@@ -54,6 +54,7 @@ jobs:
       - name: Build Docker image with secrets as build args
         run: |
           docker build \
+            --build-arg NEXT_PUBLIC_BRAND_NAME=${{ secrets.NEXT_PUBLIC_BRAND_NAME }} \
             -t ghcr.io/tanamdev/${{ env.NAME }}:${{ env.VERSION }} \
             -t ghcr.io/tanamdev/${{ env.NAME }}:latest .
 
