@@ -45,7 +45,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 
   const showComingSoon = () => {
     showToast(
-      "🚀 Fitur ini segera hadir! Stay tuned untuk update terbaru.",
+      "Fitur ini segera hadir — stay tuned untuk update terbaru.",
       "info"
     );
   };

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { BRAND } from "../constants/brand";
 
 export default function PrivacyPolicy() {
   const [lang, setLang] = useState<"en" | "id">("en");
@@ -10,8 +11,8 @@ export default function PrivacyPolicy() {
       title: "Privacy Policy",
       updated: "Last updated: September 13, 2024",
       intro: [
-        "Welcome to NaB POS! This Privacy Policy explains how we collect, use, and store your information. Since technology and privacy laws are always evolving, we may occasionally update this policy. If significant changes are made, we will notify our clients. By continuing to use NaB POS after such changes, you agree to the revised policy.",
-        "By using NaB POS (the “Application”), you agree to the terms of this Privacy Policy and, where applicable, the NaB POS Terms of Service. This Privacy Policy is a legally binding agreement between you (and your company or employer, if applicable) as the user of the Application (“you”, “your”) and NaB POS (“we”, “our”, “us”).",
+        `Welcome to ${BRAND} POS! This Privacy Policy explains how we collect, use, and store your information. Since technology and privacy laws are always evolving, we may occasionally update this policy. If significant changes are made, we will notify our clients. By continuing to use ${BRAND} POS after such changes, you agree to the revised policy.`,
+        `By using ${BRAND} POS (the “Application”), you agree to the terms of this Privacy Policy and, where applicable, the ${BRAND} POS Terms of Service. This Privacy Policy is a legally binding agreement between you (and your company or employer, if applicable) as the user of the Application (“you”, “your”) and ${BRAND} POS (“we”, “our”, “us”).`,
         "“Personal Information” refers to any information related to an identifiable individual, excluding basic business contact details such as employee name, title, business address, or telephone number.",
       ],
       merchants: {
@@ -78,8 +79,8 @@ export default function PrivacyPolicy() {
       title: "Kebijakan Privasi",
       updated: "Terakhir diperbarui: 13 September 2024",
       intro: [
-        "Selamat datang di NaB POS! Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan menyimpan informasi Anda. Karena teknologi dan hukum privasi selalu berkembang, kami dapat memperbarui kebijakan ini dari waktu ke waktu. Jika ada perubahan besar, kami akan memberi tahu klien kami. Dengan terus menggunakan NaB POS setelah perubahan tersebut, Anda dianggap menyetujui kebijakan yang telah diperbarui.",
-        'Dengan menggunakan NaB POS ("Aplikasi"), Anda setuju dengan ketentuan Kebijakan Privasi ini dan, jika berlaku, Ketentuan Layanan NaB POS. Kebijakan Privasi ini merupakan perjanjian hukum yang mengikat antara Anda (dan perusahaan atau atasan Anda, jika berlaku) sebagai pengguna Aplikasi ("Anda") dan NaB POS ("kami").',
+        `Selamat datang di ${BRAND} POS! Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan menyimpan informasi Anda. Karena teknologi dan hukum privasi selalu berkembang, kami dapat memperbarui kebijakan ini dari waktu ke waktu. Jika ada perubahan besar, kami akan memberi tahu klien kami. Dengan terus menggunakan ${BRAND} POS setelah perubahan tersebut, Anda dianggap menyetujui kebijakan yang telah diperbarui.`,
+        `Dengan menggunakan ${BRAND} POS ("Aplikasi"), Anda setuju dengan ketentuan Kebijakan Privasi ini dan, jika berlaku, Ketentuan Layanan ${BRAND} POS. Kebijakan Privasi ini merupakan perjanjian hukum yang mengikat antara Anda (dan perusahaan atau atasan Anda, jika berlaku) sebagai pengguna Aplikasi ("Anda") dan ${BRAND} POS ("kami").`,
         '"Informasi Pribadi" berarti setiap informasi terkait individu yang dapat diidentifikasi, tidak termasuk detail kontak bisnis dasar seperti nama karyawan, jabatan, alamat bisnis, atau nomor telepon.',
       ],
       merchants: {
@@ -141,7 +142,7 @@ export default function PrivacyPolicy() {
       contact: {
         title: "Kontak",
         p1: "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini atau cara data Anda ditangani, silakan hubungi kami di:",
-        email: "[alamat email Anda]",
+        email: "tanamteam@gmail.com",
       },
     },
   };

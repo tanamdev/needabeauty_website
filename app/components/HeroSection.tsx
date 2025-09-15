@@ -1,6 +1,9 @@
 "use client";
 
 import { useToast } from "./ToastProvider";
+import { BRAND } from "../constants/brand";
+import { TbRocket } from "react-icons/tb";
+import { AiOutlineAreaChart } from "react-icons/ai";
 
 export default function HeroSection() {
   const { showComingSoon } = useToast();
@@ -13,12 +16,13 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
-                🚀 Solusi Retail Terdepan
+                <TbRocket className="w-4 h-4 mr-2" />
+                <span>Solusi Retail Terdepan</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Revolusi Bisnis Retail Anda dengan{" "}
                 <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-                  NAB
+                  {BRAND}
                 </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
@@ -90,7 +94,9 @@ export default function HeroSection() {
                   <div className="w-3 h-3 bg-white/30 rounded-full"></div>
                 </div>
                 <div className="flex-1 text-center">
-                  <span className="text-white font-medium">NAB Dashboard</span>
+                  <span className="text-white font-medium">
+                    {BRAND} Dashboard
+                  </span>
                 </div>
               </div>
 
@@ -118,7 +124,10 @@ export default function HeroSection() {
                 </div>
 
                 <div className="bg-gray-50 h-32 rounded-lg flex items-center justify-center">
-                  <div className="text-gray-400">📊 Sales Analytics Chart</div>
+                  <div className="flex items-center text-gray-400">
+                    <AiOutlineAreaChart className="w-5 h-5 mr-2" />
+                    <span>Sales Analytics Chart</span>
+                  </div>
                 </div>
 
                 <div className="space-y-2">

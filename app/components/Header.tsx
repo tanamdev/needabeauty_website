@@ -3,6 +3,7 @@
 import { useState, MouseEvent } from "react";
 import Link from "next/link";
 import { useToast } from "./ToastProvider";
+import { BRAND, BRAND_INITIAL } from "../constants/brand";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,9 +41,9 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">N</span>
+                <span className="text-white font-bold text-sm">{BRAND_INITIAL}</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">NAB</span>
+              <span className="text-xl font-bold text-gray-900">{BRAND}</span>
             </Link>
           </div>
 

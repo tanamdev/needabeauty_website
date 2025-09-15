@@ -5,7 +5,11 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import FeaturesSection from "./components/FeaturesSection";
 import ProductShowcase from "./components/ProductShowcase";
+import { BRAND } from "./constants/brand";
 import { useToast } from "./components/ToastProvider";
+import { GiBullseye } from "react-icons/gi";
+import { FiStar } from "react-icons/fi";
+import { TbRocket } from "react-icons/tb";
 
 export default function Home() {
   const { showComingSoon } = useToast();
@@ -23,10 +27,10 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Tentang NAB
+                Tentang {BRAND}
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                NAB adalah platform retail technology yang membantu ribuan
+                {BRAND} adalah platform retail technology yang membantu ribuan
                 bisnis di Indonesia untuk bertransformasi digital. Dengan
                 pengalaman lebih dari 5 tahun di industri retail, kami memahami
                 tantangan yang dihadapi oleh pemilik bisnis dalam mengelola
@@ -61,8 +65,8 @@ export default function Home() {
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">🎯</span>
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
+                      <GiBullseye className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Misi Kami</h4>
@@ -74,8 +78,8 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-orange-500 rounded-xl flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">🚀</span>
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-orange-500 rounded-xl flex items-center justify-center">
+                      <TbRocket className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Visi Kami</h4>
@@ -87,8 +91,8 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">💡</span>
+                      <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
+                      <FiStar className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">
@@ -114,7 +118,7 @@ export default function Home() {
           </h2>
           <p className="text-xl text-orange-100 mb-8 leading-relaxed">
             Bergabunglah dengan ribuan bisnis yang telah merasakan manfaat
-            solusi NAB. Dapatkan trial gratis 14 hari tanpa komitmen.
+            solusi {BRAND}. Dapatkan trial gratis 14 hari tanpa komitmen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

@@ -1,13 +1,20 @@
 "use client";
 
 import { useToast } from "./ToastProvider";
+import { BRAND } from "../constants/brand";
+import { BiStoreAlt } from "react-icons/bi";
+import { AiOutlineAreaChart } from "react-icons/ai";
+import { FiCloud } from "react-icons/fi";
+import { AiOutlineSwap } from "react-icons/ai";
+import { FaUsers } from "react-icons/fa";
+import { HiOutlineDeviceMobile } from "react-icons/hi";
 
 export default function FeaturesSection() {
   const { showComingSoon } = useToast();
 
   const features = [
     {
-      icon: "🏪",
+  icon: <BiStoreAlt className="w-10 h-10 text-orange-500" />,
       title: "Aplikasi POS Lengkap",
       description:
         "Sistem POS yang mudah digunakan dengan fitur inventory management, sales tracking, dan payment processing yang terintegrasi.",
@@ -18,21 +25,21 @@ export default function FeaturesSection() {
       ],
     },
     {
-      icon: "📊",
+  icon: <AiOutlineAreaChart className="w-10 h-10 text-orange-500" />,
       title: "Dashboard Analytics",
       description:
         "Pantau performa bisnis Anda dengan dashboard yang memberikan insights mendalam tentang sales, inventory, dan customer behavior.",
       highlights: ["Sales Analytics", "Customer Insights", "Profit Tracking"],
     },
     {
-      icon: "☁️",
+  icon: <FiCloud className="w-10 h-10 text-orange-500" />,
       title: "Cloud-Based System",
       description:
         "Akses data bisnis Anda dari mana saja dengan sistem berbasis cloud yang aman dan selalu ter-update secara real-time.",
       highlights: ["Multi Device Access", "Auto Backup", "99.9% Uptime"],
     },
     {
-      icon: "🔄",
+  icon: <AiOutlineSwap className="w-10 h-10 text-orange-500" />,
       title: "Multi-Store Management",
       description:
         "Kelola multiple toko dari satu dashboard terpusat. Monitor performa setiap cabang dan sinkronisasi inventory dengan mudah.",
@@ -43,14 +50,14 @@ export default function FeaturesSection() {
       ],
     },
     {
-      icon: "👥",
+  icon: <FaUsers className="w-10 h-10 text-orange-500" />,
       title: "Customer Management",
       description:
         "Bangun relationship yang kuat dengan customer melalui sistem CRM terintegrasi, loyalty program, dan personalized marketing.",
       highlights: ["Customer Database", "Loyalty Program", "Marketing Tools"],
     },
     {
-      icon: "📱",
+  icon: <HiOutlineDeviceMobile className="w-10 h-10 text-orange-500" />,
       title: "Mobile-First Design",
       description:
         "Akses semua fitur melalui mobile app yang responsif. Kelola bisnis Anda bahkan saat sedang tidak di toko.",
@@ -124,8 +131,8 @@ export default function FeaturesSection() {
               Siap Meningkatkan Bisnis Anda?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Bergabunglah dengan ribuan bisnis yang telah mempercayai NAB untuk
-              mengoptimalkan operasional retail mereka
+              Bergabunglah dengan ribuan bisnis yang telah mempercayai {BRAND}{" "}
+              untuk mengoptimalkan operasional retail mereka
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button

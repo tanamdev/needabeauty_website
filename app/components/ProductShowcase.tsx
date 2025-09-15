@@ -1,6 +1,10 @@
 "use client";
 
 import { useToast } from "./ToastProvider";
+import { BRAND } from "../constants/brand";
+import { AiOutlineCreditCard } from "react-icons/ai";
+import { AiOutlineAreaChart } from "react-icons/ai";
+import { GiDrinkMe, GiPizzaSlice } from "react-icons/gi";
 
 export default function ProductShowcase() {
   const { showComingSoon } = useToast();
@@ -27,7 +31,8 @@ export default function ProductShowcase() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
-                💳 Aplikasi POS
+                <AiOutlineCreditCard className="w-4 h-4 mr-2" />
+                <span>Aplikasi POS</span>
               </div>
               <h3 className="text-3xl font-bold text-gray-900">
                 POS System yang Mudah & Powerful
@@ -113,7 +118,7 @@ export default function ProductShowcase() {
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform rotate-3 hover:rotate-0 transition-transform duration-300">
                 <div className="bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-4 flex items-center justify-between">
-                  <h4 className="text-white font-semibold">NAB POS</h4>
+                  <h4 className="text-white font-semibold">{BRAND} POS</h4>
                   <div className="flex space-x-2">
                     <div className="w-3 h-3 bg-white/30 rounded-full"></div>
                     <div className="w-3 h-3 bg-white/30 rounded-full"></div>
@@ -124,14 +129,18 @@ export default function ProductShowcase() {
                 <div className="p-6 space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-gray-100 p-4 rounded-lg text-center">
-                      <div className="text-2xl mb-2">🍕</div>
+                      <div className="text-2xl mb-2">
+                        <GiPizzaSlice className="w-8 h-8" />
+                      </div>
                       <div className="text-sm font-medium">
                         Pizza Margherita
                       </div>
                       <div className="text-orange-600 font-bold">₹299</div>
                     </div>
                     <div className="bg-gray-100 p-4 rounded-lg text-center">
-                      <div className="text-2xl mb-2">🥤</div>
+                      <div className="text-2xl mb-2">
+                        <GiDrinkMe className="w-8 h-8" />
+                      </div>
                       <div className="text-sm font-medium">Coca Cola</div>
                       <div className="text-orange-600 font-bold">₹59</div>
                     </div>
@@ -172,7 +181,9 @@ export default function ProductShowcase() {
             <div className="relative order-2 lg:order-1">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform -rotate-3 hover:rotate-0 transition-transform duration-300">
                 <div className="bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-4 flex items-center justify-between">
-                  <h4 className="text-white font-semibold">NAB Dashboard</h4>
+                  <h4 className="text-white font-semibold">
+                    {BRAND} Dashboard
+                  </h4>
                   <div className="flex space-x-2">
                     <div className="w-3 h-3 bg-white/30 rounded-full"></div>
                     <div className="w-3 h-3 bg-white/30 rounded-full"></div>
@@ -243,7 +254,8 @@ export default function ProductShowcase() {
 
             <div className="space-y-6 order-1 lg:order-2">
               <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800">
-                📊 Dashboard Analytics
+                <AiOutlineAreaChart className="w-4 h-4 mr-2" />
+                <span>Dashboard Analytics</span>
               </div>
               <h3 className="text-3xl font-bold text-gray-900">
                 Insights Mendalam untuk Keputusan Bisnis

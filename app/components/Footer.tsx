@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BRAND, BRAND_INITIAL } from "../constants/brand";
 
 export default function Footer() {
   return (
@@ -10,9 +11,9 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">N</span>
+                <span className="text-white font-bold text-sm">{BRAND_INITIAL}</span>
               </div>
-              <span className="text-xl font-bold">NAB</span>
+              <span className="text-xl font-bold">{BRAND}</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Solusi retail terdepan yang membantu bisnis Anda tumbuh dengan
@@ -242,7 +243,7 @@ export default function Footer() {
         <div className="py-6 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 NAB. All rights reserved.
+              © 2024 {BRAND}. All rights reserved.
             </div>
             <div className="flex flex-wrap items-center space-x-6 text-sm">
               <Link
